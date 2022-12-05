@@ -77,7 +77,9 @@
   box-shadow: 10px 10px var(--main-accent-color);
 }
 
-.rect:hover h2 {
+.rect:hover h2,
+.rect:focus h2,
+.rect:active h2 {
   color: var(--main-accent-color);
 }
 
@@ -117,6 +119,24 @@
   position: absolute;
   top: 290px;
   left: 53em;
+}
+
+#backArrow:hover,
+#backArrow:focus,
+#backArrow:active {
+  color: var(--main-accent-color);
+}
+
+.aboutContainer {
+  width: 60%;
+  margin: auto;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
 }
 
 /* #rect5 {

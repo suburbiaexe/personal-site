@@ -33,7 +33,7 @@ export default function Home() {
             </a>
             <a href="https://google.com/" target="_blank" className={styles.projLink}>
                 <div className={styles.rect} id={styles.rect4}>
-                    <h2>Found@Brown</h2>
+                    <h2>Found@Brown &rarr;</h2>
                     <p>A Full-Stack, Lost & Found site for Brown University students and staff</p>
                 </div>
             </a>
@@ -49,6 +49,7 @@ export default function Home() {
                 </ul>
             </div>
             <div className={styles.pic}>
+                {/*this needs to change LMAOOOO*/}
                 <Image src="/images/me_2.png" height={400} width={475} alt="Photo of me, redacted" />
             </div>
 
