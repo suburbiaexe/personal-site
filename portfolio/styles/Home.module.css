@@ -3,16 +3,12 @@
   display: flex;
   flex-direction: column;
   background-color: var(--main-light-color);
-  padding-left: 5em;
-  padding-right: 5em;
+  overflow: auto;
 }
 
 .intro {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 3em;
 }
 
 #title,
@@ -40,12 +36,6 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 996px) {
-  #title, #description {
-    line-height: 1;
-  }
-}
-
 #bullets {
   font-size: 30px;
   text-align: left;
@@ -61,14 +51,22 @@
 
 .rect {
   border: 2px solid var(--main-dark-color);
-  position: absolute;
   box-shadow: 10px 10px var(--shadow-color);
   text-align: center;
   display: flex;
+  width: 250px;
   flex-direction: column;
   justify-content: center;
   padding: 0.5em;
-  /* line-height: 0.5em; */
+}
+
+
+.projectContainer > a:nth-child(even) > .rect {
+  transform: rotate(-5deg)
+}
+
+.projectContainer > a:nth-child(odd) > .rect {
+  transform: rotate(5deg)
 }
 
 .rect:hover,
@@ -77,48 +75,19 @@
   box-shadow: 10px 10px var(--main-accent-color);
 }
 
-.rect:hover h2,
-.rect:focus h2,
-.rect:active h2 {
+.rect:hover #rectTitle,
+.rect:focus #rectTitle,
+.rect:active #rectTitle {
   color: var(--main-accent-color);
 }
 
-#rect1 {
-  height: 200px;
-  width: 275px;
-  top: 60px;
-  left: 5em;
-  transform: rotate(-1.5deg);
+#rectTitle,
+#rectText {
+  color: var(--main-dark-color);
 }
 
-#rect2 {
-  height: 200px;
-  width: 250px;
-  top: 60px;
-  left: 27em;
-  transform: rotate(0.5deg);
-}
-
-#rect3 {
-  height: 200px;
-  width: 275px;
-  top: 60px;
-  left: 47em;
-  transform: rotate(-0.2deg);
-}
-
-#rect4 {
-  height: 200px;
-  width: 250px;
-  top: 60px;
-  left: 69em;
-  transform: rotate(1deg);
-}
-
-.pic {
-  position: absolute;
-  top: 290px;
-  left: 53em;
+#backArrow {
+  padding-left: 1em;
 }
 
 #backArrow:hover,
@@ -136,128 +105,46 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
 }
 
-/* #rect5 {
-  height: 350px;
-  width: 350px;
-  top: 312px;
-  left: 63em;
-} */
-
-/* .footer {
+.projectContainer {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  min-width: 95vw;
+  padding-top: 4em;
 }
 
-.footer a {
+.introContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  flex-grow: 1;
+  justify-content: space-around;
+  padding-top: 3.5em;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+@media screen and (max-width: 1120px) {
+  #title, #description {
+    line-height: 1;
+  }
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
+@media screen and (max-width: 1057px) {
+  .main {
+    flex-direction: column-reverse;
+  }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .introContainer {
     flex-direction: column;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 3em;
+  }
+
+  .projectContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-} */
