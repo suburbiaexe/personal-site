@@ -1,9 +1,13 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import styles from '../styles/Home.module.css'
 
 export default function AboutPage() {
     return (
         <div className={styles.main}>
+            <Head>
+                <title>About [Redacted]</title>
+            </Head>
             <h1 id={styles.backArrow}>
                 <Link href="/">&larr;</Link>
             </h1>

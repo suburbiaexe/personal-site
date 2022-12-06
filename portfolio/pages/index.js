@@ -13,19 +13,19 @@ export default function Home() {
         </Head>
 
         <main className={styles.main}>
-            <a href="https://google.com/" target="_blank" className={styles.projLink}>
+            <a href="https://personas-gamma.vercel.app/" target="_blank" className={styles.projLink}>
                 <div className={styles.rect} id={styles.rect1}>
                     <h2>Personas &rarr;</h2>
                     <p>An Excercise in UX Research</p>
                 </div>
             </a>
-            <a href="https://google.com/" target="_blank" className={styles.projLink}>
+            <a href="https://banalbat666.github.io/responsive-redesign-handin/" target="_blank" className={styles.projLink}>
                 <div className={styles.rect} id={styles.rect2}>
                     <h2>Responsive Redesign &rarr;</h2>
                     <p>Responsiveness using plain HTML/CSS</p>
                 </div>
             </a>
-            <a href="https://google.com/" target="_blank" className={styles.projLink}>
+            <a href="https://banalbat666.github.io/iterative/" target="_blank" className={styles.projLink}>
                 <div className={styles.rect} id={styles.rect3}>
                     <h2>Iterative Design &rarr;</h2>
                     <p>An Exercise in Iterative Product Design</p>
