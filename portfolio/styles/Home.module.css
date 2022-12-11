@@ -1,4 +1,5 @@
-.main {
+.mainHome,
+.mainAbout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -86,16 +87,6 @@
   color: var(--main-dark-color);
 }
 
-#backArrow {
-  padding-left: 1em;
-}
-
-#backArrow:hover,
-#backArrow:focus,
-#backArrow:active {
-  color: var(--main-accent-color);
-}
-
 .aboutContainer {
   width: 60%;
   margin: auto;
@@ -106,6 +97,7 @@
   align-items: center;
   text-align: center;
   font-size: x-large;
+  padding-bottom: 2em;
 }
 
 .projectContainer {
@@ -130,7 +122,7 @@
 }
 
 @media screen and (max-width: 1057px) {
-  .main {
+  .mainHome {
     flex-direction: column-reverse;
   }
 
@@ -145,6 +137,20 @@
   .projectContainer {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-width: 0;
     padding-bottom: 3em;
+  }
+
+  .projectContainer > a:nth-child(even) > .rect {
+    transform: rotate(0)
+  }
+  
+  .projectContainer > a:nth-child(odd) > .rect {
+    transform: rotate(0)
+  }
+
+  .rect {
+    margin-bottom: 2em;
   }
 }
