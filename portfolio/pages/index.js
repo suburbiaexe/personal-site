@@ -32,7 +32,7 @@ export default function Home() {
                                 Responsive Redesign &rarr;
                             </h2>
                             <p id={styles.rectText}>
-                                Responsiveness using plain HTML/CSS
+                                An Exercise in Accessibility and Plain HTML/CSS
                             </p>
                         </div>
                     </a>
@@ -46,16 +46,13 @@ export default function Home() {
                             </p>
                         </div>
                     </a>
-                    <a
-                        href="https://google.com/"
-                        target="_blank"
-                        className={styles.projLink}
-                    >
+                    <a href="/projects/filter" className={styles.projLink}>
                         <div className={styles.rect}>
-                            <h2 id={styles.rectTitle}>Found@Brown &rarr;</h2>
+                            <h2 id={styles.rectTitle}>
+                                Image Filtering &rarr;
+                            </h2>
                             <p id={styles.rectText}>
-                                A Full-Stack, Lost & Found site for Brown
-                                University students and staff
+                                An Exercise in Visualization and Next.js
                             </p>
                         </div>
                     </a>

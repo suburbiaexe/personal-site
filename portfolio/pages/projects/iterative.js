@@ -28,7 +28,7 @@ export default function Personas() {
                     pic="/images/iterative.png"
                     width={396}
                     height={328}
-                    altText="bruhhh."
+                    altText="IPhone mockup of the Slingshot home page."
                     mb={true}
                 />
                 <div className={styles.textContainer}>
