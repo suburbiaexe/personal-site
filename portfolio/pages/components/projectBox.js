@@ -11,7 +11,7 @@ export default function Project(props) {
     }
 
     return (
-        <Link href={props.link} target="_blank">
+        <Link href={props.link ?? ""} target="_blank">
             <div className={styles.imageContainer}>
                 <h2 className={styles.seeMore} style={{ marginBottom: margin }}>
                     See more of {props.name} &rarr;
