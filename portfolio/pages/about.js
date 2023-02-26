@@ -7,13 +7,13 @@ export default function AboutPage() {
     return (
         <div className={styles.mainAbout}>
             <Head>
-                <title>About [Redacted]</title>
+                <title>About Elizabeth</title>
             </Head>
             <BackArrow />
             <div className={styles.aboutContainer}>
                 <h1 style={{ marginTop: "0" }}>About Me</h1>
                 <p>
-                    Hey! My name is [Redacted], and I'm a [redacted] at Brown
+                    Hey! My name is Elizabeth, and I'm a Junior at Brown
                     University. I'm originally from Seattle, Washington, so I
                     spent my entire adolescence trying to avoid tech like the
                     plague in an effort to be a contrarian. I opted instead to
@@ -23,17 +23,18 @@ export default function AboutPage() {
                     away when I realized how <i>fun</i> it was and could be to
                     combine my other interests with tech. I became specifically
                     interested in web development and the endless capability of
-                    the internet, and now I'm somehow [redacted] years into
-                    earning a Computer Science degree.
+                    the internet, and now I'm somehow 3 years into earning a
+                    Computer Science degree.
                 </p>
                 <p>
-                    I'm currently a Co-Director for [Redacted], the club
-                    responsible for [redacted]. I'm primarily a frontend web
-                    developer, but I also have experience with UI/UX and product
-                    design work (and am an avid fan of computer graphics). Most
-                    of my time is spent thinking about aesthetics and
-                    accessibility, as well as gathering inspiration from posters
-                    and editorials!
+                    I'm currently a Co-Director for Hack@Brown, the club
+                    responsible for organizing Brown's largest (and oldest)
+                    student-run hackathon. I'm primarily a frontend engineer,
+                    but I also have experience with UI/UX and product design
+                    work (and am an avid fan of computer graphics). Most of my
+                    time is spent thinking about aesthetics and accessibility,
+                    as well as gathering inspiration from posters and
+                    editorials!
                 </p>
                 <p>
                     When I'm not working, I enjoy hiking, playing the New York
