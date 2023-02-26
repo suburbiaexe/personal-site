@@ -52,7 +52,7 @@ export default function Home() {
                         <ul id={styles.bullets}>
                             <li>
                                 <a
-                                    href="https://www.google.com/"
+                                    href="https://www.linkedin.com/in/elizabeth-c-wu/"
                                     target="_blank"
                                 >
                                     <Image
@@ -67,7 +67,7 @@ export default function Home() {
                             </li>
                             <li>
                                 <a
-                                    href="https://www.google.com/"
+                                    href="https://github.com/suburbiaexe"
                                     target="_blank"
                                 >
                                     <Image
@@ -96,10 +96,7 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://www.google.com/"
-                                    target="_blank"
-                                >
+                                <a href="mailto:elizabeth_c_wu@brown.edu">
                                     <Image
                                         src="/images/envelope-paper-heart-fill.svg"
                                         width={25}
