@@ -14,7 +14,7 @@ export default function AboutPage() {
                 <h1 style={{ marginTop: "0", marginBottom: "0.5em" }}>
                     About Me
                 </h1>
-                <div>
+                <div className={styles.aboutBody}>
                     <iframe
                         style={{
                             borderRadius: "12px",
