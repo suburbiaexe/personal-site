@@ -103,7 +103,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
   font-size: x-large;
   padding-bottom: 2em;
 }

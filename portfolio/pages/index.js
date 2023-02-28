@@ -46,9 +46,9 @@ export default function Home() {
                             Hi, I'm <Link href="/about">Elizabeth</Link>!
                         </h1>
                         <p id={styles.description}>
-                            I'm a frontend engineer and an avid fan of visual
-                            design. You can explore some of my projects listed
-                            on the cards, or find them all{" "}
+                            I'm a front-end engineer and an avid visual design
+                            fan. You can explore some of my projects listed on
+                            the cards, or find them all{" "}
                             <Link href="/projectPage">here</Link>.
                         </p>
                         <ul id={styles.bullets}>
@@ -83,10 +83,7 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://www.google.com/"
-                                    target="_blank"
-                                >
+                                <a href="/images/resume.pdf" target="_blank">
                                     <Image
                                         src="/images/file-earmark-text-fill.svg"
                                         width={25}

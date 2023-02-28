@@ -11,36 +11,54 @@ export default function AboutPage() {
             </Head>
             <BackArrow />
             <div className={styles.aboutContainer}>
-                <h1 style={{ marginTop: "0" }}>About Me</h1>
-                <p>
-                    Hey! My name is Elizabeth, and I'm a Junior at Brown
-                    University. I'm originally from Seattle, Washington, so I
-                    spent my entire adolescence trying to avoid tech like the
-                    plague in an effort to be a contrarian. I opted instead to
-                    invest in art, music, and history, which helped me develop
-                    interests in design and social good. At some point down the
-                    line, though, I stopped pushing the idea of computer science
-                    away when I realized how <i>fun</i> it was and could be to
-                    combine my other interests with tech. I became specifically
-                    interested in web development and the endless capability of
-                    the internet, and now I'm somehow 3 years into earning a
-                    Computer Science degree.
-                </p>
-                <p>
-                    I'm currently a Co-Director for Hack@Brown, the club
-                    responsible for organizing Brown's largest (and oldest)
-                    student-run hackathon. I'm primarily a frontend engineer,
-                    but I also have experience with UI/UX and product design
-                    work (and am an avid fan of computer graphics). Most of my
-                    time is spent thinking about aesthetics and accessibility,
-                    as well as gathering inspiration from posters and
-                    editorials!
-                </p>
-                <p>
-                    When I'm not working, I enjoy hiking, playing the New York
-                    Times Crossword, curating Spotify Playlists, playing piano,
-                    and playing The Sims 4.
-                </p>
+                <h1 style={{ marginTop: "0", marginBottom: "0.5em" }}>
+                    About Me
+                </h1>
+                <div>
+                    <iframe
+                        style={{
+                            borderRadius: "12px",
+                            float: "left",
+                            paddingRight: "1em",
+                        }}
+                        src="https://open.spotify.com/embed/playlist/2ufEGUSEyiXeGImu7cNVrp?utm_source=generator&theme=0"
+                        width="50%"
+                        height="352"
+                        frameBorder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    ></iframe>
+                    <p style={{ marginTop: "0" }}>
+                        Hey! My name is Elizabeth, and I'm a Junior at Brown
+                        University. I'm originally from Seattle, Washington, so
+                        I've been surrounded by art, tech, and music for my
+                        entire life (you can check out my current favorite
+                        playlist on the left)! My parents gave me unfettered
+                        access to the internet at far too young of an age, so I
+                        spent a significant portion of my adolescence scrolling
+                        away on Tumblr. However, running my tweenage blog gave
+                        me early exposure to web development with basic
+                        HTML/CSS, and I grew to love designing the internet so
+                        much that I'm now (somehow) three years into earning a
+                        Computer Science degree.
+                    </p>
+                    <p>
+                        I'm currently a Co-Director for Hack@Brown, the club
+                        responsible for organizing Brown's largest and oldest
+                        student-run hackathon. I'm primarily a front-end
+                        engineer, but I also have experience with UI/UX and
+                        product design work (and am a big fan of computer
+                        graphics). Most of my time is spent thinking about
+                        aesthetics and accessibility, as well as gathering
+                        inspiration from posters and editorials!
+                    </p>
+                    <p>
+                        When I'm not working, I enjoy playing crossword puzzles,
+                        curating Spotify Playlists, playing piano, and playing
+                        The Sims 4.
+                    </p>
+                </div>
             </div>
             <Footer />
         </div>
