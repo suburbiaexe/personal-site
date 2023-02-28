@@ -1,5 +1,6 @@
 .mainHome,
-.mainAbout {
+.mainAbout,
+.mainProjectPage {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,13 +11,16 @@
 .intro {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 #title,
 #description {
   text-align: left;
   color: var(--main-dark-color);
-  line-height: 0.25;
+  /* line-height: 0.25; */
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 #title {
@@ -27,13 +31,17 @@
   font-size: 30px;
 }
 
-#title a {
+#title a,
+#description a {
   color: var(--main-accent-color);
 }
 
 #title a:hover,
 #title a:focus,
-#title a:active {
+#title a:active,
+#description a:hover,
+#description a:focus,
+#description a:active {
   text-decoration: underline;
 }
 
@@ -132,6 +140,10 @@
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 3em;
+  }
+
+  .intro {
+    width: 80%;
   }
 
   .projectContainer {

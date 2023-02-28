@@ -4,7 +4,7 @@ import Tag from "../components/tag.js";
 import Project from "../components/projectBox.js";
 import styles from "../../styles/Projects.module.css";
 
-export default function Personas() {
+export default function Responsive() {
     return (
         <div className={styles.pageContainer}>
             <Head>

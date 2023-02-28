@@ -47,7 +47,9 @@ export default function Home() {
                         </h1>
                         <p id={styles.description}>
                             I'm a frontend engineer and an avid fan of visual
-                            design.
+                            design. You can explore some of my projects listed
+                            on the cards, or find them all{" "}
+                            <Link href="/projectPage">here</Link>.
                         </p>
                         <ul id={styles.bullets}>
                             <li>
