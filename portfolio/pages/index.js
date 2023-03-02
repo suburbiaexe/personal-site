@@ -43,12 +43,12 @@ export default function Home() {
                 <div className={styles.introContainer}>
                     <div className={styles.intro}>
                         <h1 id={styles.title}>
-                            Hi, I'm <Link href="/about">Elizabeth</Link>!
+                            Hi, I&apos;m <Link href="/about">Elizabeth</Link>!
                         </h1>
                         <p id={styles.description}>
-                            I'm a front-end engineer and an avid visual design
-                            fan. You can explore some of my projects listed on
-                            the cards, or find them all{" "}
+                            I&apos;m a front-end engineer and an avid visual
+                            design fan. You can explore some of my projects
+                            listed on the cards, or find them all{" "}
                             <Link href="/projectPage">here</Link>.
                         </p>
                         <ul id={styles.bullets}>
@@ -56,6 +56,7 @@ export default function Home() {
                                 <a
                                     href="https://www.linkedin.com/in/elizabeth-c-wu/"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <Image
                                         src="/images/linkedin.svg"
@@ -71,6 +72,7 @@ export default function Home() {
                                 <a
                                     href="https://github.com/suburbiaexe"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <Image
                                         src="/images/github.svg"
