@@ -10,6 +10,7 @@
 
 #backArrow {
     padding-left: 1em;
+    color: var(--main-dark-color);
 }
 
 #backArrow:hover,
@@ -18,16 +19,37 @@
     color: var(--main-accent-color);
 }
 
-.box {
+.box, 
+.plainBox {
     border: 2px solid var(--main-dark-color);
-    box-shadow: 3px 3px var(--shadow-color);
+    /* box-shadow: 3px 3px var(--shadow-color); */
     height: 2em;
-    padding: 1em;
-    margin: 0.5em;
+    /* padding: 1em; */
+    /* margin: 0.5em; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--main-dark-color);
+    /* color: #ff8e90; */
+}
+
+.plainBox {
+    /* border: 2px solid #52504e; */
+    /* box-shadow: -2px 2px var(--shadow-color); */
+    border-radius: 3px;
+    margin-right: 0.5em;
+    /* margin-bottom: 0.5em; */
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: small;
+}
+
+.box {
+    border: 2px solid var(--main-dark-color);
+    box-shadow: 3px 3px var(--shadow-color);
+    margin: 0.5em;
+    padding: 1em;
 }
 
 .imageContainer {

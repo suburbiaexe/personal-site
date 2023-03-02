@@ -8,6 +8,11 @@
   overflow: auto;
 }
 
+.mainAbout,
+.mainProjectPage {
+  color: var(--main-dark-color);
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -18,7 +23,6 @@
 #description {
   text-align: left;
   color: var(--main-dark-color);
-  /* line-height: 0.25; */
   margin-top: 0.25em;
   margin-bottom: 0.25em;
 }
@@ -58,17 +62,48 @@
   text-decoration: underline;
 }
 
-.rect {
+.rect,
+.wideRect {
   border: 2px solid var(--main-dark-color);
   box-shadow: 10px 10px var(--shadow-color);
-  text-align: center;
+  /* text-align: center; */
   display: flex;
-  width: 250px;
   flex-direction: column;
   justify-content: center;
   padding: 0.5em;
+  color: var(--main-dark-color);
 }
 
+.rect {
+  width: 250px;
+  text-align: center;
+}
+
+.wideRect {
+  width: 400px;
+  margin: 1em;
+  height: 250px;
+  text-align: left;
+}
+
+.wideRect #rectText {
+  font-size: large;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.wideRect #rectTitle {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.wideRectSkills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  /* justify-content: center; */
+  /* padding: 0.25em; */
+}
 
 .projectContainer > a:nth-child(even) > .rect {
   transform: rotate(-5deg)
@@ -80,13 +115,21 @@
 
 .rect:hover,
 .rect:focus,
-.rect:active {
+.rect:active,
+.wideRect:hover,
+.wideRect:focus,
+.wideRect:active {
+  transition: 0.25s;
   box-shadow: 10px 10px var(--main-accent-color);
 }
 
 .rect:hover #rectTitle,
 .rect:focus #rectTitle,
-.rect:active #rectTitle {
+.rect:active #rectTitle,
+.wideRect:hover #rectTitle,
+.wideRect:focus #rectTitle,
+.wideRect:active, #rectTitle {
+  transition: 0.25s;
   color: var(--main-accent-color);
 }
 
@@ -98,7 +141,7 @@
 .aboutContainer {
   width: 60%;
   margin: auto;
-  margin-top: 0;
+  /* margin-top: 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,6 +164,22 @@
   align-items: center;
   justify-content: space-around;
   padding-top: 3.5em;
+}
+
+.projPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+.projPageContentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1120px) {

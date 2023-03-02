@@ -20,24 +20,24 @@ export default function Home() {
             <main className={styles.mainHome}>
                 <div className={styles.projectContainer}>
                     <ProjectLink
-                        lnk="/projects/personas"
+                        lnk="https://personas-gamma.vercel.app/"
                         title="Personas"
                         descrip="An Exercise in UX Research"
                     />
                     <ProjectLink
-                        lnk="https://www.google.com/"
+                        lnk="https://found-at-brown.vercel.app/"
                         title="Found@Brown"
-                        descrip="Full-Stack Web Development"
+                        descrip="Front-end Web Development with Typescript and React"
                     />
                     <ProjectLink
-                        lnk="/projects/iterative"
-                        title="Iterative Design"
+                        lnk="https://banalbat666.github.io/iterative/"
+                        title="Slingshot"
                         descrip="Iterative Startup Product Design"
                     />
                     <ProjectLink
-                        lnk="/projects/filter"
+                        lnk="https://image-filter-livid.vercel.app/"
                         title="Image Filtering"
-                        descrip="Practicing Effective Information Visualization"
+                        descrip="Info Visualization with Illustrator and React"
                     />
                 </div>
                 <div className={styles.introContainer}>
