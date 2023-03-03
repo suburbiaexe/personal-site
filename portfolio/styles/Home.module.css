@@ -147,6 +147,14 @@
   padding-bottom: 2em;
 }
 
+/* code adapted from this post: https://stackoverflow.com/a/62484130 */
+.highlighter {
+  background: linear-gradient(104deg, rgba(255, 104, 107,0) 0.9%, rgba(255, 104, 107,1.25) 2.4%, rgba(255, 104, 107,0.5) 5.8%, rgba(255, 104, 107,0.1) 93%, rgba(255, 104, 107,0.7) 96%, rgba(255, 104, 107,0) 98%), linear-gradient(183deg, rgba(255, 104, 107,0) 0%, rgba(255, 104, 107,0.3) 7.9%, rgba(255, 104, 107,0) 15%);
+  -webkit-box-decoration-break: clone;
+  margin: 0;
+  border-radius: 7.5px;
+}
+
 .projectContainer {
   display: flex;
   justify-content: space-evenly;
@@ -241,5 +249,14 @@
   .aboutBody iframe {
     width: 100%;
     margin-bottom: 1.5em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .wideRect {
+    width: auto;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 }
