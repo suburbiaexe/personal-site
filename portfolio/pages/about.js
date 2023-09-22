@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Footer from "./components/footer.js";
 import BackArrow from "./components/back.js";
+import Link from "next/link";
 
 export default function AboutPage() {
     return (
@@ -30,7 +31,7 @@ export default function AboutPage() {
                         loading="lazy"
                     ></iframe>
                     <p style={{ marginTop: "0" }}>
-                        Hey! My name is Elizabeth, and I&apos;m a Junior at
+                        Hey! My name is Elizabeth, and I&apos;m a Senior at
                         Brown University. I&apos;m originally from Seattle,
                         Washington, so I&apos;ve been surrounded by{" "}
                         <span className={styles.highlighter}>
@@ -51,14 +52,25 @@ export default function AboutPage() {
                         into earning a Computer Science degree.
                     </p>
                     <p>
-                        I&apos;m currently a Co-Director for Hack@Brown, the
-                        club responsible for organizing Brown&apos;s largest and
-                        oldest student-run hackathon. I&apos;m primarily
-                        interested in{" "}
+                        This past summer, I worked as a{" "}
                         <span className={styles.highlighter}>
-                            front-end engineering
-                        </span>
-                        , but I also have experience with{" "}
+                            frontend engineering intern
+                        </span>{" "}
+                        at{" "}
+                        <Link
+                            href="https://mercury.com"
+                            target="_blank"
+                            className={styles.inlineLink}
+                        >
+                            Mercury
+                        </Link>{" "}
+                        on the Customer Experience team, and I&apos;m thrilled
+                        to be returning as a full-time engineer after I
+                        graduate! Previously, I was a Co-Director for
+                        Hack@Brown, the club responsible for organizing
+                        Brown&apos;s largest and oldest student-run hackathon.
+                        I&apos;m primarily a frontend engineer, but I also have
+                        experience with{" "}
                         <span className={styles.highlighter}>UI/UX</span> and{" "}
                         <span className={styles.highlighter}>
                             product design

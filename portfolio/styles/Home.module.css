@@ -36,7 +36,8 @@
 }
 
 #title a,
-#description a {
+#description a,
+.inlineLink {
   color: var(--main-accent-color);
 }
 
@@ -45,7 +46,10 @@
 #title a:active,
 #description a:hover,
 #description a:focus,
-#description a:active {
+#description a:active,
+.inlineLink:hover,
+.inlineLink:focus,
+.inlineLink:active {
   text-decoration: underline;
 }
 
