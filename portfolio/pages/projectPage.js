@@ -16,6 +16,17 @@ export default function ProjectPage() {
                 <h1 style={{ marginTop: "0" }}>Projects</h1>
                 <div className={styles.projPageContentContainer}>
                     <WideProjectLink
+                        lnk="https://demo.mercury.com/settings/notifications"
+                        title="Notifications"
+                        descrip="Refreshed the Mercury user notifications page with an organized, intuitive, and browser-responsive design!"
+                        skills={[
+                            <PlainTag label="React" key="notif1" />,
+                            <PlainTag label="Redux" key="notif2" />,
+                            <PlainTag label="Typescript" key="notif3" />,
+                            <PlainTag label="REST APIs" key="notif4" />,
+                        ]}
+                    />
+                    <WideProjectLink
                         lnk="https://image-filter-livid.vercel.app/"
                         title="Image Filtering"
                         descrip="Created an interactive website with three tutorials on image filtering for different skill levels!"

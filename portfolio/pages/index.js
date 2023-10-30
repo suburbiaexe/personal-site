@@ -27,12 +27,12 @@ export default function Home() {
                     <ProjectLink
                         lnk="https://found-at-brown.vercel.app/"
                         title="Found@Brown"
-                        descrip="Front-End Web Development with Typescript and React"
+                        descrip="Frontend Web Development with Typescript and React"
                     />
                     <ProjectLink
-                        lnk="https://banalbat666.github.io/iterative/"
-                        title="Slingshot"
-                        descrip="Iterative Startup Product Design"
+                        lnk="https://demo.mercury.com/settings/notifications"
+                        title="Notifications"
+                        descrip="Refreshed Mercury User Notifications with Typescript and React"
                     />
                     <ProjectLink
                         lnk="https://image-filter-livid.vercel.app/"
